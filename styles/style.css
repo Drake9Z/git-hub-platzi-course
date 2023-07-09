@@ -26,8 +26,12 @@
         margin-top: 3rem;
         width: 100%;
         text-align: center;
-
     }
+
+    h2{ 
+        background-color: #91f699;
+    }
+
     main ul{ 
         margin: 2rem;
     }
@@ -44,4 +48,21 @@
         margin: 0 auto;
 
         border: 1px solid black;
+    }
+
+    footer{ 
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        background-image: linear-gradient(to top, #91f699, 
+        #767676);
+        color: azure;
+        padding: 0.5rem;
+    }
+
+
+    footer p{ 
+        padding: 0.8rem 0;
+        height: 12px;
     }
