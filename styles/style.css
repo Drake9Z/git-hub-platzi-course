@@ -45,3 +45,19 @@
 
         border: 1px solid black;
     }
+
+    footer{ 
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        background-image: linear-gradient(to top, #91f699, #3cdac5, #53b6cb, #7a92a9, #767676);
+        color: azure;
+        padding: 0.5rem;
+    }
+
+
+    footer p{ 
+        padding: 0.8rem 0;
+        height: 12px;
+    }
