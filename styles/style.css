@@ -45,20 +45,3 @@
 
         border: 1px solid black;
     }
-
-    section{ 
-        padding: 1rem;
-        font-size: large;
-        width: 100%;
-    }
-
-    section img{ 
-        width: 390px;
-        height: 350px;
-        margin: 2rem auto;
-    }
-
-    h2{ 
-        padding: 1rem 0;
-        background-color: #91f699;
-    }
