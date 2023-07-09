@@ -36,3 +36,12 @@
         padding: 0.5rem 0;
         font-size: large;
     }
+    .quote{ 
+        height: 120px;
+        width: 370px;
+        font-size: large;
+        padding: 8px;
+        margin: 0 auto;
+
+        border: 1px solid black;
+    }
