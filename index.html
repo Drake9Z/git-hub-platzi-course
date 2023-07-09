@@ -12,7 +12,36 @@
         <h1>Curso de git-hub en Platzi</h1>
     </header>
     <main>
-        <h2>Aqui va a ir el contenido que vamos a ver en el telefono</h2>
+        <h2>Comandos básicos para trabajo remoto con GIT</h2>
+        <ul>
+            <li><code>git clone url_del_servidor_remoto</code>: Nos permite descargar los archivos de la última versión de la rama principal y todo el historial de cambios en la carpeta .git.</li>
+            <li><code>git push</code>: Luego de hacer <code>git add</code> y <code>git commit</code>, debemos ejecutar este comando para mandar los cambios al servidor remoto.</li>
+            <li><code>git fetch</code>: Lo usamos para traer actualizaciones del servidor remoto y guardarlas en nuestro repositorio local (en caso de que hayan, por supuesto).</li>
+            <li><code>git merge</code>: También usamos el comando <code>git merge</code> con servidores remotos. Lo necesitamos para combinar los últimos cambios del servidor remoto y nuestro directorio de trabajo.</li>
+            <li><code>git pull</code>: Básicamente, <code>git fetch</code> y <code>git merge</code> al mismo tiempo.</li>
+        </ul>
+        <hr>
+        <h2>Adicionalmente, tenemos otros comandos que nos sirven para trabajar en proyectos muy grandes</h2>
+        <ul>
+            <li><code>git log --oneline</code>: Te muestra el id commit y el título del commit.</li>
+            <li><code>git log --decorate</code>: Te muestra donde se encuentra el head point en el log.</li>
+            <li><code>git log --stat</code>: Explica el número de líneas que se cambiaron brevemente.</li>
+            <li><code>git log -p</code>: Explica el número de líneas que se cambiaron y te muestra qué se cambió en el contenido.</li>
+            <li><code>git shortlog</code>: Indica qué commits ha realizado un usuario, mostrando el usuario y el título de sus commits.</li>
+            <li><code>git log --graph --oneline --decorate</code>: Muestra mensajes personalizados de los commits.</li>
+            <li><code>git log --pretty=format:"%cn hizo un commit %h el día %cd"</code>: Muestra mensajes personalizados de los commits.</li>
+            <li><code>git log -3</code>: Limitamos el número de commits.</li>
+            <li><code>git log --after="2018-1-2"</code></li>
+            <li><code>git log --after="today"</code></li>
+            <li><code>git log --after="2018-1-2" --before="today"</code>: Commits para localizar por fechas.</li>
+            <li><code>git log --author="Nombre del autor"</code>: Commits hechos por un autor específico.</li>
+            <li><code>git log --grep="INVIE"</code>: Busca los commits que cumplan exactamente con el texto especificado.</li>
+            <li><code>git log --grep="INVIE" --i</code>: Busca los commits que cumplan sin importar mayúsculas o minúsculas.</li>
+            <li><code>git log index.html</code>: Busca los commits en un archivo específico.</li>
+            <li><code>git log -S "Por contenido"</code>: Buscar los commits con el contenido especificado dentro del archivo.</li>
+            <li><code>git log > log.txt</code>: Guarda los logs en un archivo txt.</li>
+          </ul>
+          <hr>
     </main>
     <footer></footer>
     
