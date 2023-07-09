@@ -51,7 +51,8 @@
         height: 150px;
         display: flex;
         flex-direction: row;
-        background-image: linear-gradient(to top, #91f699, #3cdac5, #53b6cb, #7a92a9, #767676);
+        background-image: linear-gradient(to top, #91f699, 
+        #767676);
         color: azure;
         padding: 0.5rem;
     }
