@@ -1,68 +1,81 @@
-    *{ 
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    header{ 
-        display: flex;
-        flex-direction: row;
-        border-bottom: 1px solid gray;
-        height: 150px;
-        justify-content: center;
-        align-items: center;
-        background-image: linear-gradient(to bottom, #91f699, #eeeeee);
-    }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-    header img{ 
-        width: 80px;
-        height: 80px;
-        background-color: transparent;
-        margin: 20px;
-    }
-    header h1{ 
-        height: 100%;
-        padding: 10px;
-        margin-top: 3rem;
-        width: 100%;
-        text-align: center;
-    }
+header {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid gray;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #91f699, #eeeeee);
+}
 
-    h2{ 
-        background-color: #91f699;
-    }
+header img {
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  margin: 20px;
+}
+header h1 {
+  height: 100%;
+  padding: 10px;
+  margin-top: 3rem;
+  width: 100%;
+  text-align: center;
+}
 
-    main ul{ 
-        margin: 2rem;
-    }
+h2 {
+  background-color: #91f699;
+}
 
-    main ul li{
-        padding: 0.5rem 0;
-        font-size: large;
-    }
-    .quote{ 
-        height: 120px;
-        width: 370px;
-        font-size: large;
-        padding: 8px;
-        margin: 0 auto;
+main ul {
+  margin: 2rem;
+}
 
-        border: 1px solid black;
-    }
+main ul li {
+  padding: 0.5rem 0;
+  font-size: large;
+}
+.quote {
+  height: 120px;
+  width: 370px;
+  font-size: large;
+  padding: 8px;
+  margin: 0 auto;
 
-    footer{ 
-        width: 100%;
-        height: 150px;
-        display: flex;
-        flex-direction: row;
-        background-image: linear-gradient(to top, #91f699, 
-        #767676);
-        color: azure;
-        padding: 0.5rem;
-    }
+  border: 1px solid black;
+}
 
+.section--merge {
+  padding: 1rem;
+  font-size: large;
+}
 
-    footer p{ 
-        padding: 0.8rem 0;
-        height: 12px;
-    }
+.box-1{
+    border: 1px solid black;
+    padding: 0.5rem;
+    margin: .5rem;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(to top, #91f699, #767676);
+  color: azure;
+  padding: 0.5rem;
+}
+
+footer p {
+  padding: 0.8rem 0;
+  height: 12px;
+}

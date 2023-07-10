@@ -1,101 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
     <title>BlogPost git-hub</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img src="https://static.platzi.com/media/achievements/badge-github-0b729570-934d-47d8-ba6b-610d7f15e0ec.png" alt="Logo de Platzi">
-        <h1>Curso de git-hub en Platzi</h1>
+      <img
+        src="https://static.platzi.com/media/achievements/badge-github-0b729570-934d-47d8-ba6b-610d7f15e0ec.png"
+        alt="Logo de Platzi"
+      />
+      <h1>Curso de git-hub en Platzi</h1>
     </header>
     <main>
-        <h2>Comandos básicos para trabajo remoto con GIT</h2>
-        <ul>
-            <li><code>git clone url_del_servidor_remoto</code>: Nos permite descargar los archivos de la última versión de la rama principal y todo el historial de cambios en la carpeta .git.</li>
-            <li><code>git push</code>: Luego de hacer <code>git add</code> y <code>git commit</code>, debemos ejecutar este comando para mandar los cambios al servidor remoto.</li>
-            <li><code>git fetch</code>: Lo usamos para traer actualizaciones del servidor remoto y guardarlas en nuestro repositorio local (en caso de que hayan, por supuesto).</li>
-            <li><code>git merge</code>: También usamos el comando <code>git merge</code> con servidores remotos. Lo necesitamos para combinar los últimos cambios del servidor remoto y nuestro directorio de trabajo.</li>
-            <li><code>git pull</code>: Básicamente, <code>git fetch</code> y <code>git merge</code> al mismo tiempo.</li>
-        </ul>
-        <hr>
-        <h2>Adicionalmente, tenemos otros comandos que nos sirven para trabajar en proyectos muy grandes</h2>
-        <ul>
-            <li><code>git log --oneline</code>: Te muestra el id commit y el título del commit.</li>
-            <li><code>git log --decorate</code>: Te muestra donde se encuentra el head point en el log.</li>
-            <li><code>git log --stat</code>: Explica el número de líneas que se cambiaron brevemente.</li>
-            <li><code>git log -p</code>: Explica el número de líneas que se cambiaron y te muestra qué se cambió en el contenido.</li>
-            <li><code>git shortlog</code>: Indica qué commits ha realizado un usuario, mostrando el usuario y el título de sus commits.</li>
-            <li><code>git log --graph --oneline --decorate</code>: Muestra mensajes personalizados de los commits.</li>
-            <li><code>git log --pretty=format:"%cn hizo un commit %h el día %cd"</code>: Muestra mensajes personalizados de los commits.</li>
-            <li><code>git log -3</code>: Limitamos el número de commits.</li>
-            <li><code>git log --after="2018-1-2"</code></li>
-            <li><code>git log --after="today"</code></li>
-            <li><code>git log --after="2018-1-2" --before="today"</code>: Commits para localizar por fechas.</li>
-            <li><code>git log --author="Nombre del autor"</code>: Commits hechos por un autor específico.</li>
-            <li><code>git log --grep="INVIE"</code>: Busca los commits que cumplan exactamente con el texto especificado.</li>
-            <li><code>git log --grep="INVIE" --i</code>: Busca los commits que cumplan sin importar mayúsculas o minúsculas.</li>
-            <li><code>git log index.html</code>: Busca los commits en un archivo específico.</li>
-            <li><code>git log -S "Por contenido"</code>: Buscar los commits con el contenido especificado dentro del archivo.</li>
-            <li><code>git log > log.txt</code>: Guarda los logs en un archivo txt.</li>
-          </ul>
-          <hr>
-          <div class="quote">
-            <p><code>git show</code>Muestra una descipción con las adiciones y eliminaciones</p>
-          </div>
-          <section>
-              <h2>Fusión de ramas con Git merge</h2>
-            <p>La fusión en Git es la forma en que este sistema une un historial bifurcado. El comando <code>git merge</code> permite integrar líneas de desarrollo independientes generadas por <code>git branch</code> en una sola rama. Con este comando, podemos crear un nuevo commit que combina dos ramas o branches: la rama actual y la rama que se indica después del comando.</p>
-            <p>Estos comandos de fusión del merge afectan solo a la rama actual y no a la rama de destino. Por lo tanto, te recomendamos utilizar <code>git checkout</code> para seleccionar la rama actual y <code>git branch -d</code> para eliminar la rama de destino obsoleta.</p>
-            <img src="https://static.platzi.com/media/user_upload/git-merge-final-7422eace-18ce-4fb2-8eb2-11275fde2f41.jpg" alt="Git Merge Final">
+      <h2>Comandos básicos para trabajo remoto con GIT</h2>
+      <ul>
+        <li>
+          <code>git clone url_del_servidor_remoto</code>: Nos permite descargar
+          los archivos de la última versión de la rama principal y todo el
+          historial de cambios en la carpeta .git.
+        </li>
+        <li>
+          <code>git push</code>: Luego de hacer <code>git add</code> y
+          <code>git commit</code>, debemos ejecutar este comando para mandar los
+          cambios al servidor remoto.
+        </li>
+        <li>
+          <code>git fetch</code>: Lo usamos para traer actualizaciones del
+          servidor remoto y guardarlas en nuestro repositorio local (en caso de
+          que hayan, por supuesto).
+        </li>
+        <li>
+          <code>git merge</code>: También usamos el comando
+          <code>git merge</code> con servidores remotos. Lo necesitamos para
+          combinar los últimos cambios del servidor remoto y nuestro directorio
+          de trabajo.
+        </li>
+        <li>
+          <code>git pull</code>: Básicamente, <code>git fetch</code> y
+          <code>git merge</code> al mismo tiempo.
+        </li>
+      </ul>
+      <hr />
+      <h2>
+        Adicionalmente, tenemos otros comandos que nos sirven para trabajar en
+        proyectos muy grandes
+      </h2>
+      <ul>
+        <li>
+          <code>git log --oneline</code>: Te muestra el id commit y el título
+          del commit.
+        </li>
+        <li>
+          <code>git log --decorate</code>: Te muestra donde se encuentra el head
+          point en el log.
+        </li>
+        <li>
+          <code>git log --stat</code>: Explica el número de líneas que se
+          cambiaron brevemente.
+        </li>
+        <li>
+          <code>git log -p</code>: Explica el número de líneas que se cambiaron
+          y te muestra qué se cambió en el contenido.
+        </li>
+        <li>
+          <code>git shortlog</code>: Indica qué commits ha realizado un usuario,
+          mostrando el usuario y el título de sus commits.
+        </li>
+        <li>
+          <code>git log --graph --oneline --decorate</code>: Muestra mensajes
+          personalizados de los commits.
+        </li>
+        <li>
+          <code>git log --pretty=format:"%cn hizo un commit %h el día %cd"</code
+          >: Muestra mensajes personalizados de los commits.
+        </li>
+        <li><code>git log -3</code>: Limitamos el número de commits.</li>
+        <li><code>git log --after="2018-1-2"</code></li>
+        <li><code>git log --after="today"</code></li>
+        <li>
+          <code>git log --after="2018-1-2" --before="today"</code>: Commits para
+          localizar por fechas.
+        </li>
+        <li>
+          <code>git log --author="Nombre del autor"</code>: Commits hechos por
+          un autor específico.
+        </li>
+        <li>
+          <code>git log --grep="INVIE"</code>: Busca los commits que cumplan
+          exactamente con el texto especificado.
+        </li>
+        <li>
+          <code>git log --grep="INVIE" --i</code>: Busca los commits que cumplan
+          sin importar mayúsculas o minúsculas.
+        </li>
+        <li>
+          <code>git log index.html</code>: Busca los commits en un archivo
+          específico.
+        </li>
+        <li>
+          <code>git log -S "Por contenido"</code>: Buscar los commits con el
+          contenido especificado dentro del archivo.
+        </li>
+        <li>
+          <code>git log > log.txt</code>: Guarda los logs en un archivo txt.
+        </li>
+      </ul>
+      <hr />
+      <div class="quote">
+        <p>
+          <code>git show</code>Muestra una descipción con las adiciones y
+          eliminaciones
+        </p>
+      </div>
+      <section class="section--merge">
+        <h2>Fusión de ramas con Git merge</h2>
+        <p>
+          La fusión en Git es la forma en que este sistema une un historial
+          bifurcado. El comando <code>git merge</code> permite integrar líneas
+          de desarrollo independientes generadas por <code>git branch</code> en
+          una sola rama. Con este comando, podemos crear un nuevo commit que
+          combina dos ramas o branches: la rama actual y la rama que se indica
+          después del comando.
+        </p>
+        <p>
+          Estos comandos de fusión del merge afectan solo a la rama actual y no
+          a la rama de destino. Por lo tanto, te recomendamos utilizar
+          <code>git checkout</code> para seleccionar la rama actual y
+          <code>git branch -d</code> para eliminar la rama de destino obsoleta.
+        </p>
+        <img
+          src="https://static.platzi.com/media/user_upload/git-merge-final-7422eace-18ce-4fb2-8eb2-11275fde2f41.jpg"
+          alt="Git Merge Final"
+        />
 
-            <p>¿Cómo unir dos ramas en Git?</p>
-            <p>Ahora bien, para combinar ramas en tu repositorio local, usa <code>git checkout</code> para cambiar a la rama donde deseas fusionar. Por lo general, esta es la rama principal. Luego, emplea <code>git merge</code> y especifica el nombre de la otra rama que deseas traer a esta rama. Ten en cuenta que esto es una combinación de avance rápido.</p>
-            <p>¿Cómo realizar un merge en Git?</p>
-            <p>Para hacer un merge en Git, primero asegúrate de estar en la rama correcta. Después, usa el comando <code>git merge</code> seguido del nombre de la rama que quieres combinar. Por ejemplo, si quieres crear un nuevo commit en la rama master con los cambios de la rama cabecera, usa este comando:</p>
-          <code>git checkout master</code><br>
+        <p>¿Cómo unir dos ramas en Git?</p>
+        <p>
+          Ahora bien, para combinar ramas en tu repositorio local, usa
+          <code>git checkout</code> para cambiar a la rama donde deseas
+          fusionar. Por lo general, esta es la rama principal. Luego, emplea
+          <code>git merge</code> y especifica el nombre de la otra rama que
+          deseas traer a esta rama. Ten en cuenta que esto es una combinación de
+          avance rápido.
+        </p>
+        <p>¿Cómo realizar un merge en Git?</p>
+        <p>
+          Para hacer un merge en Git, primero asegúrate de estar en la rama
+          correcta. Después, usa el comando <code>git merge</code> seguido del
+          nombre de la rama que quieres combinar. Por ejemplo, si quieres crear
+          un nuevo commit en la rama master con los cambios de la rama cabecera,
+          usa este comando:
+        </p>
+        <div class="box-1">
+          <code>git checkout master</code><br />
           <code>git merge cabecera</code>
-          
-            <p>Es importante tener en cuenta que en caso de haber conflictos, debes guardar tus cambios antes de hacer <code>git checkout</code> para evitar perder tu trabajo. También es recomendable emplear los comandos básicos de GitHub, como <code>git fetch</code>, <code>git push</code> y <code>git pull</code>, para mantener actualizado tu repositorio.</p>
-            <p>Comandos básicos de GitHub</p>
-            <ul>
-              <li><code>git init</code>: crear un repositorio.</li>
-              <li><code>git add</code>: agregar un archivo a staging.</li>
-              <li><code>git commit -m "mensaje"</code>: guardar el archivo en git con un mensaje.</li>
-              <li><code>git branch</code>: crear una nueva rama.</li>
-              <li><code>git checkout</code>: moverse entre ramas.</li>
-              <li><code>git push</code>: mandar cambios a un servidor remoto.</li>
-              <li><code>git fetch</code>: traer actualizaciones del servidor remoto y guardarlas en nuestro repositorio local.</li>
-              <li><code>git merge</code>: tiene dos usos. Uno es la fusión de ramas, funcionando como un commit en la rama actual, trayendo la rama indicada. Su otro uso es guardar los cambios de un servidor remoto en nuestro directorio.</li>
-              <li><code>git pull</code>: fetch y merge al mismo tiempo.</li>
-              <li><code>git checkout "codigo de version" "nombre del archivo"</code>: volver a la última versión de la que se ha hecho commit.</li>
-              <li><code>git reset</code>: vuelve al pasado sin posibilidad de volver al futuro, se debe usar con especificaciones.</li>
-              <li><code>git reset --soft</code>: vuelve a la versión en el repositorio, pero guarda los cambios en staging. Así, podemos aplicar actualizaciones a un nuevo commit.</li>
-              <li><code>git reset --hard</code>: todo vuelve a su versión anterior.</li>
-              <li><code>git reset HEAD</code>: saca los cambios de staging, pero no los borra. Es lo opuesto a git add.</li>
-              <li><code>git rm</code>: elimina los archivos, pero no su historial. Si queremos recuperar algo, solo hay que regresar. Se utiliza así: <code>git rm --cached</code> elimina los archivos en staging pero los mantiene en el disco duro. <code>git rm --force</code> elimina los archivos de git y del disco duro.</li>
-              <li><code>git status</code>: estado de archivos en el repositorio.</li>
-              <li><code>git log</code>: historia entera del archivo.</li>
-              <li><code>git log --stat</code>: cambios específicos en el archivo a partir de un commit.</li>
-              <li><code>git show</code>: cambios históricos y específicos hechos en un archivo.</li>
-              <li><code>git diff "codigo de version 1" "codigo de version 2"</code>: comparar cambios entre versiones.</li>
-              <li><code>git diff</code>: comparar directorio con staging.</li>
-            </ul>
-          </section>
+        </div>
+
+        <p>
+          Es importante tener en cuenta que en caso de haber conflictos, debes
+          guardar tus cambios antes de hacer <code>git checkout</code> para
+          evitar perder tu trabajo. También es recomendable emplear los comandos
+          básicos de GitHub, como <code>git fetch</code>,
+          <code>git push</code> y <code>git pull</code>, para mantener
+          actualizado tu repositorio.
+        </p>
+        <p>Comandos básicos de GitHub</p>
+        <ul>
+          <li><code>git init</code>: crear un repositorio.</li>
+          <li><code>git add</code>: agregar un archivo a staging.</li>
+          <li>
+            <code>git commit -m "mensaje"</code>: guardar el archivo en git con
+            un mensaje.
+          </li>
+          <li><code>git branch</code>: crear una nueva rama.</li>
+          <li><code>git checkout</code>: moverse entre ramas.</li>
+          <li><code>git push</code>: mandar cambios a un servidor remoto.</li>
+          <li>
+            <code>git fetch</code>: traer actualizaciones del servidor remoto y
+            guardarlas en nuestro repositorio local.
+          </li>
+          <li>
+            <code>git merge</code>: tiene dos usos. Uno es la fusión de ramas,
+            funcionando como un commit en la rama actual, trayendo la rama
+            indicada. Su otro uso es guardar los cambios de un servidor remoto
+            en nuestro directorio.
+          </li>
+          <li><code>git pull</code>: fetch y merge al mismo tiempo.</li>
+          <li>
+            <code>git checkout "codigo de version" "nombre del archivo"</code>:
+            volver a la última versión de la que se ha hecho commit.
+          </li>
+          <li>
+            <code>git reset</code>: vuelve al pasado sin posibilidad de volver
+            al futuro, se debe usar con especificaciones.
+          </li>
+          <li>
+            <code>git reset --soft</code>: vuelve a la versión en el
+            repositorio, pero guarda los cambios en staging. Así, podemos
+            aplicar actualizaciones a un nuevo commit.
+          </li>
+          <li>
+            <code>git reset --hard</code>: todo vuelve a su versión anterior.
+          </li>
+          <li>
+            <code>git reset HEAD</code>: saca los cambios de staging, pero no
+            los borra. Es lo opuesto a git add.
+          </li>
+          <li>
+            <code>git rm</code>: elimina los archivos, pero no su historial. Si
+            queremos recuperar algo, solo hay que regresar. Se utiliza así:
+            <code>git rm --cached</code> elimina los archivos en staging pero
+            los mantiene en el disco duro. <code>git rm --force</code> elimina
+            los archivos de git y del disco duro.
+          </li>
+          <li>
+            <code>git status</code>: estado de archivos en el repositorio.
+          </li>
+          <li><code>git log</code>: historia entera del archivo.</li>
+          <li>
+            <code>git log --stat</code>: cambios específicos en el archivo a
+            partir de un commit.
+          </li>
+          <li>
+            <code>git show</code>: cambios históricos y específicos hechos en un
+            archivo.
+          </li>
+          <li>
+            <code>git diff "codigo de version 1" "codigo de version 2"</code>:
+            comparar cambios entre versiones.
+          </li>
+          <li><code>git diff</code>: comparar directorio con staging.</li>
+        </ul>
+      </section>
     </main>
     <footer>
-        <div>
-            <p>Curso Profesional de Git & Git-Hub</p>
-          <p>Contacto:</p>
-          <p>Andres Alfonso</p>
-          <p>alfonsodev97@gmail.com</p>
-          <p>alfonsodev.97com</p>
-        </div>
-        <div>
-          <p>Julio-2023</p>
-        </div>
-      </footer>
-</body>
+      <div>
+        <p>Curso Profesional de Git & Git-Hub</p>
+        <p>Contacto:</p>
+        <p>Andres Alfonso</p>
+        <p>alfonsodev97@gmail.com</p>
+        <p>alfonsodev.97com</p>
+      </div>
+      <div>
+        <p>Julio-2023</p>
+      </div>
+    </footer>
+  </body>
 </html>
